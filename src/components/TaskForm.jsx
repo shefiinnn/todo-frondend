@@ -23,7 +23,7 @@ function TaskForm({ onSubmit, editingTask }) {
       title,
       description,
       priority,
-      dueDate, // ✅ fixed field name
+      dueDate, 
       status: "To-Do",
     };
 
@@ -46,7 +46,7 @@ function TaskForm({ onSubmit, editingTask }) {
         body: JSON.stringify(newTask),
       });
 
-      const raw = await response.text(); // ✅ Read once
+      const raw = await response.text();
       console.log("Raw response status:", response.status);
       console.log("Raw response body:", raw);
 
