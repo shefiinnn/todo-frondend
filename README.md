@@ -10,3 +10,35 @@ Before starting, make sure you have the following installed:
 
 1. Clone the Repository
 
+   git clone https://github.com/shefiinnn/todo-frondend
+   cd todo-frondend
+
+2. Open the Project in VS Code
+
+3. Install Project Dependencies
+   npm install
+
+4.If you are running locally you need to change every fetch urls (i have already deployed for making it easy)
+
+fetch(`https://backend-todo-sj1x.onrender.com/api/tasks/`)
+
+change to -> fetch ("http://127.0.0.1:8000/api/tasks/");
+
+5. Start the Frontend Development Server
+   npm start
+
+possible errors:-
+
+If the app crashes due to missing packages like jspdf, install them:
+npm install jspdf
+
+If npm install fails, try clearing the cache:
+npm cache clean --force
+rm -rf node_modules
+npm install
+
+
+   
+
+
+
